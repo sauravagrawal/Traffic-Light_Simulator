@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+#trafficBar {
+  background-color: black;
+  width: 10px;
+  height: 70px;
+  margin-left: 82px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#trafficRod{
+  background-color: black;
+  width: 66px;
+  height: 193px;
+  margin-left: 50px;
+  padding: 7px;
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #ccc;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red{
+    background-color: red;
 }
-
-.App-link {
-  color: #61dafb;
+.yellow{
+  background-color: yellow;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.green{
+  background-color: green;
+}
+.selected{
+  box-shadow: #f8ffcc 0px 0px 50px 20px;
+}
+.left{
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+button.success{
+  background: green;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+button.danger{
+  background: red;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
 }
