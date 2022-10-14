@@ -8,20 +8,21 @@ const TrafficLight = () => {
     const [repeat, setRepeat] = useState();
 
     const simulationStart = () => {
+        setRedActive(true);
         let counts = 0;
         setRepeat(setInterval(() => {
           if(counts % 3 === 0){
-            setRedActive(true);
-            setYellowActive(false);
-            setGreenActive(false);
-          } else if(counts % 3 === 1){
             setRedActive(false);
             setYellowActive(true);
             setGreenActive(false);
-          }  else {
+          } else if(counts % 3 === 1){
             setRedActive(false);
             setYellowActive(false);
             setGreenActive(true);
+          }  else {
+            setRedActive(true);
+            setYellowActive(false);
+            setGreenActive(false);
           } 
           counts++;         
         },10000));
